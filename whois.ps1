@@ -31,7 +31,9 @@ if ($rs -eq [System.Windows.Forms.DialogResult]::OK)
 whois $tb.Text
 }
 Write-Host -NoNewLine 'Press any key to continue...';
-$null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
+$null = Read-Host
+# $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown");
+
 
 
 
