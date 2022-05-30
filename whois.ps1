@@ -28,7 +28,7 @@ $testform.Add_Shown({$tb.Select()})
 $rs = $testform.ShowDialog()
 if ($rs -eq [System.Windows.Forms.DialogResult]::OK)
 {
-whois $tb.Text
+whois.exe $tb.Text
 }
 Write-Host -NoNewLine 'Press any key to continue...';
 $null = Read-Host
